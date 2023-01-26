@@ -1,4 +1,4 @@
-//FILE LOOP NOTES
+//3-3 FILE NOTES
 //  - I CAN open and read data from a text file
 //	- I CAN use loops to process an entire text file
 
@@ -14,6 +14,7 @@ int main() {
 
 	//Make an input file variable
 	
+
 	//Open the file
 	
 
@@ -21,30 +22,17 @@ int main() {
 
 
 	//Loop until end of file
-
-	//Compute MPG for first line
-	int numTrips = 0;
 	
 
-	//Use a for loop to read and add the miles on the line
-	double totalMiles = 0, miles = 0;
-
-	
-		//Input trip miles
-		
-		//Add to total
-
-
-	//Input gallons
-
-
-	//Compute MPG
+		//Input name
 	
 
-	//Output results
-	
+		//Input score
+
+
+		//Determine pass/fail
 
 	
 
-	system("Pause");
+	system("pause");
 }
