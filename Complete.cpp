@@ -15,7 +15,7 @@ int main() {
 	//Make an input file variable
 	ifstream fin;
 	//Open the file
-	fin.open("mileage.txt");
+	fin.open("grades.txt");
 
 	//Make sure it opened (it won't tell you otherwise)
 	if (!fin.is_open()) {
@@ -25,28 +25,22 @@ int main() {
 	//Loop until end of file
 	while (!fin.eof()) {
 
-		//Compute MPG for first line
-		int numTrips = 0;
-		fin >> numTrips;
+		//Input name
+		string name;
+		fin >> name;
 
-		//Use a for loop to read and add the miles on the line
-		double totalMiles = 0, miles = 0;
+		//Input score
+		double score;
+		fin >> score;
 
-		for (int i = 0; i < numTrips; i++) {
-			fin >> miles; //Input trip miles
-			totalMiles = totalMiles + miles; //Add to total
+		//Determine pass/fail
+		if (score >= 60) {
+			cout << name << "\t" << score << "\t" << "PASS" << endl;
 		}
-
-		//Input gallons
-		double gallons = 0;
-		fin >> gallons;
-
-		//Compute MPG
-		double mpg = totalMiles / gallons;
-
-		//Output results
-		cout << "MPG = " << mpg << endl;
+		else {
+			cout << name << "\t" << score << "\t" << "FAIL" << endl;
+		}
 	}
 
-	system("Pause");
+	system("pause");
 }
