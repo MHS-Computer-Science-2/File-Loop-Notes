@@ -4,7 +4,7 @@
 
 // To add a new file:
 //   Right-click on source folder, choose 'Add New Item'
-//   Under 'Utility', choose 'Text File'
+//   Type 'yourFileName.txt', then press 'add'
 
 #include <iostream>
 #include <fstream> //Adds File input/output
